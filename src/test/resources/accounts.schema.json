@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "default": [],
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": [
+      "FIO",
+      "position"
+    ],
+    "FIO": {
+      "type": "string",
+      "minLength": 1
+    },
+    "position": {
+      "type": "string",
+      "enum": [
+        "QA",
+        "PM",
+        "Developer"
+      ]
+    }
+  }
+}
